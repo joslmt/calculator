@@ -1,0 +1,44 @@
+*{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.calc{
+    display: grid;
+    align-content: center;
+    height: 80vh;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .45em;
+}
+#borrar{
+    grid-column: 1/4;
+    background-color: rgb(189, 6, 6);
+    color: white;
+    box-shadow: none;
+}
+#see{
+    grid-column: 1/5;}
+#igual{
+    grid-column: 2/5;
+    background-color: rgb(31, 179, 18);
+    color: white;
+    box-shadow: none;
+}
+#error{
+    text-align: center;
+    font-size: 21px;
+    grid-column: 1/5;
+    border-radius: 0.1em;
+    background-color: rgb(207, 13, 13);
+    color: #fff;
+    text-transform: uppercase;}
+input[type=button],
+input[type=text]{
+    text-align: center;
+    padding: .75em;
+    border: none;
+    outline: none;
+    border-radius: .1em;
+    font-size: 18px;
+    }
+input[type=button]{box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.521);}
+input[type=text]{border-bottom: 3px solid black;}
+input[type=button]:hover{box-shadow: 1px 1px 1px 1px rgb(128, 128, 128);}
